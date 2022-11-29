@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Contact Us</title>
+		<meta charset="UTF-8" name="width-adjust-style">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<style type="text/css">
+		.logo
+		{
+			position:absolute;
+			top:10px;
+			left:20px;
+			width:70px;
+			height:70px;
+			display:inline;
+			z-index:0;
+			padding:0px;
+		}
+		.nav a
+		{
+			color:white; 
+			text-decoration: none; 
+			padding:10px; 
+		}
+		.nav
+		{
+			display:inline; 
+			text-align: right; 
+			position:absolute;
+			top:40px;
+			right:80px;
+			font-family:Times New Roman;			
+			font-size:20px;
+			font-style:bold;
+			z-index:0;
+		} 
+		.mainpic
+		{
+			height:300px;
+			width:100%;
+			filter:brightness(45%);
+			z-index:-1;
+			display:inline;
+		}
+		.interior
+		{
+			position:absolute;
+			top:100px;
+			left:550px;
+			z-index:0;
+			font-size:90px;
+			font-family:Times new roman;
+			color:white;
+		}
+	    .division1
+		{
+		    padding: 70px;
+			width:50%;
+			border:3px #D3D3D3; 
+		}
+		
+		}
+		#sidepara
+		{
+			text-align:justify;
+			font-size:20px;
+			padding:40px;
+		}
+		.column 
+		{
+		  float: left;
+		  width: 33.3%;
+		  margin-bottom: 16px;
+		  padding: 0 8px;
+		}
+		.container p
+		{
+			font-size:20px;
+			text-align:center;
+			padding:20px;
+		}
+		.card
+		{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			margin: 8px;
+			border: 2px solid white;
+			border-radius: 25px;
+		}
+		.container 
+		{
+			padding:20px;
+			height:250px;
+			border: 2px solid white;
+			border-radius: 25px;
+		}
+		.container:hover
+		{
+			background-color:#DA7B93;
+			color:white;
+		}
+		.container::after, .row::after 
+		{
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		.title 
+		{
+		  color:lightgrey;
+		}
+		#sidebar 
+		{
+			display: none;
+		}
+		.cart:hover #sidebar 
+		{
+			display:block;
+		}
+	
+		*
+		{
+		  margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: times, serif; 
+		  font-style:italic; 
+		}
+        .contact-section
+		{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .contact-info{
+        color: #000;
+        max-width: 500px;
+        line-height: 65px;
+        padding-left: 10px;
+        font-size: 18px;
+        }
+
+        .contact-info i{
+        margin-right: 20px;
+        font-size: 25px; 
+        }
+
+        .contact-form{
+        max-width: 700px;
+        margin-right: 50px;
+        }
+
+        .contact-info, .contact-form{
+        flex: 1;
+        }
+
+        .contact-form h2{
+        color: #fff;
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        }
+
+        .contact-form .text-box
+		{
+        background: #D3D3D3;
+        color: #000;
+        border: none;
+        width: calc(50% - 10px);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        opacity: 0.9;
+        }
+
+        .contact-form .text-box:first-child
+		{
+        margin-right: 15px;
+        }
+        .contact-form textarea
+		{
+			background: #D3D3D3;
+			color: #000;
+			border: none;
+			width: 100%;
+			padding: 12px;
+			font-size: 15px;
+			min-height: 200px;
+			max-height: 400px;
+			resize: vertical;
+			border-radius: 5px;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			opacity: 0.9;
+        }
+
+        .contact-form .send-btn
+		{
+        float: right;
+        background: #2E94E3;
+        color: #fff;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: background;
+        }
+
+        .contact-form .send-btn:hover
+		{
+        background: #0582E3;
+        }
+
+        @media screen and (max-width: 950px)
+		{
+        .contact-section{
+        flex-direction: column;
+        }
+
+        .contact-info, .contact-form
+		{
+        margin: 30px 50px;
+        }
+
+        .contact-form h2
+		{
+        font-size: 30px;
+        }
+
+        .contact-form .text-box
+		{
+        width: 100%;
+        }
+        }
+
+        /*css for alert messages*/
+
+        .alert-success{
+        z-index: 1;
+        background: #D4EDDA;
+        font-size: 18px;
+        padding: 20px 40px;
+        min-width: 420px;
+        position: fixed;
+        right: 0;
+        top: 10px;
+        border-left: 8px solid #3AD66E;
+        border-radius: 4px;
+        }
+
+        .alert-error{
+        z-index: 1;
+        background: #FFF3CD;
+        font-size: 18px;
+        padding: 20px 40px;
+        min-width: 420px;
+        position: fixed;
+        right: 0;
+        top: 10px;
+        border-left: 8px solid #FFA502;
+        border-radius: 4px;
+        }
+		footer
+		{
+		  width: 100%;
+		  position: absolute;
+		  top:850px;
+		  bottom: 0px;
+		  left: 0px;
+		}
+		footer .content
+		{
+		  margin: auto;
+		  padding: 20px;
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  background-color:#D3D3D3;
+		  width:100%;
+		  
+		}
+		footer .content p,a
+		{
+		  color: black;
+		}
+		footer .content .box
+		{
+		  width: 33%;
+		  transition: all 0.4s ease;
+		}
+		footer .content .topic
+		{
+		  font-size: 22px;
+		  font-weight: 600;
+		  color:black;
+		  margin-bottom: 16px;
+		}
+		footer .content p
+		{
+		  text-align: justify;
+		}
+		footer .content .lower .topic
+		{
+		  margin: 24px 0 5px 0;
+		}
+		footer .content .lower i
+		{
+		  padding-right: 16px;
+		}
+		footer .content .middle
+		{
+		  padding-left: 80px;
+		}
+		footer .content .middle a
+		{
+		  line-height: 32px;
+		}
+		footer .content .right input[type="text"]
+		{
+		  height: 45px;
+		  width: 100%;
+		  outline: none;
+		  color:white;
+		  background:#D3D3D3;
+		  border-radius: 5px;
+		  padding-left: 10px;
+		  font-size: 17px;
+		  border: 2px solid  #DA7B93;
+		}
+		footer .content .right input[type="submit"]
+		{
+		  height: 42px;
+		  width: 100%;
+		  font-size: 18px;
+		  color: white;
+		  background:#DA7B93;
+		  outline: none;
+		  border-radius: 5px;
+		  letter-spacing: 1px;
+		  cursor: pointer;
+		  margin-top: 12px;
+		  border: 2px solid  #DA7B93;
+		  transition: all 0.3s ease-in-out;
+		}
+		.content .right input[type="submit"]:hover
+		{
+		  background: none;
+		  color:  #DA7B93;
+		}
+		footer .bottom
+		{
+		  width: 100%;
+		  text-align: right;
+		  color:  #DA7B93;
+		  padding: 0 40px 5px 0;
+		}
+		footer .bottom a
+		{
+			color: #DA7B93;
+		}
+		footer a
+		{
+		  transition: all 0.3s ease;
+		}
+		footer a:hover
+		{
+		  color:  #DA7B93;
+		}
+	</style>
+	</head>
+	<body >
+		<header>
+			<main>
+				<section >
+					<img class=mainpic src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\mainpic.jpg"> 
+					<img class=logo src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\logo2.png">
+					<p class=interior>Contact Us</p>
+					<div class=div>
+						<nav class=nav >
+							 <a href="index.html">Home</a>
+							 <a href="About.html">About</a>
+							 <a href="service.html">Services</a>
+							 <a href="project.html">Projects</a>
+							 <a href="Contact.html">Contact</a>
+						</nav>
+				</section> 
+				<div class="contact-section">
+				  <div class="contact-info">
+					<div><img icon src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\icons8-visit-25.png">    4671 Sugar Camp Road, Owatonna, 55060.</div>
+					<div><img icon src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\icons8-envelope-25.png">  abc@email.com</div>
+					<div><img icon src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\icons8-telephone-25.png">   +007 9089 6767</div>
+					<div><img icon src="C:\Users\ANCITAVALAN\Downloads\interiorhtml\icons8-clock-25.png">  Mon - Fri 8:00 AM to 5:00 PM</div>
+				  </div>
+				  <div class="contact-form">
+					<h2>Contact Us</h2>
+					<form class="contact" action="" method="post">
+					  <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+					  <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+					  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+					  <input type="submit" name="submit" class="send-btn" value="Send">
+					</form>
+				  </div>
+				</div>
+				<!--contact section end-->			
+			</main>	
+		</header>
+		<footer >
+			<div class="content" bgcolor="lightgray">
+				 <div class="left box">
+				   <div class="upper">
+					 <div class="topic">About us</div>
+					 <p>CodingLab is a channel where you can learn HTML,
+					 CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+				   </div>
+				   <div class="lower">
+					 <div class="topic">Contact us</div>
+					 <div class="phone">
+					   <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+					 </div>
+					 <div class="email">
+					   <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="middle box">
+				   <div class="topic">Our services</div>
+				   <div><a href="#">Architecture design</a></div>
+				   <div><a href="#">Interior design </a></div>
+				   <div><a href="#">Concept Design</a></div>
+				 </div>
+				 <div class="right box">
+				   <div class="topic">Stay with us:</div>
+				   <form action="#">
+					 <input type="text" placeholder="Enter email address">
+					 <input type="submit" name="" value="Send">
+				   </form>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html
